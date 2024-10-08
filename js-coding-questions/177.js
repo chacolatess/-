@@ -6,9 +6,9 @@ const map = Object.create(null);
     throw new Error(" should contain iterables");
     
   }
-for(let i= 0;i<=items.length){
+for(let i= 0;i<items.length){
   let value = items[i];
-  let key = calback(value);
+  let key = callbackfn(value);
   if(map[key] === undefined)
   {
     map[key]=[];
