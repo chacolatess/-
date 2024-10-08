@@ -1,6 +1,7 @@
 const invoke = (fn,...args) => typeof fn ==="function" && fn(...args);
 const once = (fn) => (...args)=> {
-  invoke(fn,...args);fn=null;
+  invoke(fn,...args);
+  fn=null;
 }
 
 const wrap = port =>{
