@@ -4,7 +4,7 @@ function undefinedToNull(arg){
   //in js arrays and functions consider as an object here insted of that thing by means 
   // so non object structure will be came here the thing instead 
   // 
-  if(typeof arg!=="object" || arg==="null"){
+  if(typeof arg!=="object" || arg===null){
     return arg ?? null;
     // here the retirn statement arh snd that thing non objects shpuld return null when its left handed when its was right handed null or undefined
     
@@ -16,7 +16,7 @@ function undefinedToNull(arg){
       arg[key] =null;
     }
     else {
-      arg[key] = undefinedtoNull(value);
+      arg[key] = undefineToNull(value);
     }
     
   }
