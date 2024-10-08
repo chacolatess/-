@@ -1,4 +1,4 @@
-const numeric = (string) => !isNan(parseFloat(string)) &&  isFinite(Number(string));
+const isNumeric = (string) => !isNaN(parseFloat(string)) &&  isFinite(Number(string));
 function uncompress(str){
   const stack = [];
   for (const char of str){
@@ -14,13 +14,14 @@ function uncompress(str){
       }
       stack.pop();
       
-    }
-    while(stack.length && isNumeric(stack[stack.length-1)){
+    
+    while(stack.length && isNumeric(stack[stack.length-1])){
     
     count = stack.pop()+ count;
     }
     stack.push(word.repeat(Number(count)));
-  }}
-return stack.join('');
+  }
+  } 
+  return stack.join('');
 }
 
