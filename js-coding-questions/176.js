@@ -1,6 +1,6 @@
 // ?? -> nullish coalescing
 // in js arrays , functions and alll thise thing consdider as a object here 
-function undefinedtoNull(arg){
+function undefinedToNull(arg){
   //in js arrays and functions consider as an object here insted of that thing by means 
   // so non object structure will be came here the thing instead 
   // 
