@@ -1,8 +1,13 @@
 const invoke = (fn,...args) => typeof fn ==="function" && fn(...args);
-const once = (fn) => (...args)=> {
-  invoke(fn,...args);
-  fn=null;
-}
+const once = (fn) => {
+  let called = false; // Track if the function has already been called
+  return (...args) => {
+    if (!called) {
+      called = true;
+      invoke(fn, ...args);
+    }
+  };
+};
 
 const wrap = port =>{
   const fascade ={};
