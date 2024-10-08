@@ -10,7 +10,7 @@ const wrap = port =>{
       {message,reply}
     )
   }
-  port.onMessage =({message,reply}=>{
+  port.onMessage =({message,reply})=>{
     invoke(fascade.onMessage,message,once(reply))
   }
   return fascade;
