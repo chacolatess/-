@@ -14,9 +14,9 @@ function FirstBadVersion(isBad){
         
       }
       else{
-        end=mid+1;
+        start= mid+1;
       }
     }
-    return star<=version ? start:-1;
+    return start<=version ? start:-1;
     }
 }
