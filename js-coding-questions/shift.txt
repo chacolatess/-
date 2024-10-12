@@ -1,0 +1,7 @@
+The shift method in JavaScript is used on arrays to remove the first element and return that removed element. This method modifies the original array and reduces its length by one.
+array.shift();
+const fruits = ['apple', 'banana', 'cherry'];
+const firstFruit = fruits.shift();
+
+console.log(firstFruit); // Output: 'apple'
+console.log(fruits);     // Output: ['banana', 'cherry']
