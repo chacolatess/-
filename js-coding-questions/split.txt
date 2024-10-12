@@ -1,0 +1,33 @@
+
+You said:
+What is shift method and solut method in js 
+ChatGPT said:
+ChatGPT
+In JavaScript, the shift and solut methods are not both standard methods. Here's a breakdown of shift and clarification about solut:
+
+shift()
+Definition: shift() is a method of the Array prototype.
+Functionality: It removes the first element from an array and returns that element. This method changes the length of the array.
+Usage:
+javascript
+Copy code
+let array = [1, 2, 3];
+let firstElement = array.shift(); // firstElement is 1
+console.log(array); // array is now [2, 3]
+solut
+Clarification: There is no standard solut method in JavaScript. If you meant something else or a specific library function, please provide more details.
+If you have any more questions or need examples, feel free to ask!
+
+
+
+You said:
+Split insaid
+ChatGPT said:
+ChatGPT
+In JavaScript, the split() method is used to divide a string into an array of substrings based on a specified delimiter.
+
+split()
+Definition: A method of the String prototype.
+Syntax: string.split(separator, limit)
+separator: A string or regular expression used to determine where to split the string. If omitted, the entire string is returned as the first element of an array.
+limit: An optional integer that specifies the maximum number of splits to be found.
