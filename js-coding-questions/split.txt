@@ -20,14 +20,15 @@ If you have any more questions or need examples, feel free to ask!
 
 
 
-You said:
-Split insaid
-ChatGPT said:
-ChatGPT
-In JavaScript, the split() method is used to divide a string into an array of substrings based on a specified delimiter.
+let str = "Hello, World!";
+let result = str.split(", "); // Splits at ", "
+console.log(result); // ["Hello", "World!"]
 
-split()
-Definition: A method of the String prototype.
-Syntax: string.split(separator, limit)
-separator: A string or regular expression used to determine where to split the string. If omitted, the entire string is returned as the first element of an array.
-limit: An optional integer that specifies the maximum number of splits to be found.
+let numbers = "1,2,3,4,5";
+let numArray = numbers.split(","); // Splits at ","
+console.log(numArray); // ["1", "2", "3", "4", "5"]
+
+let limitedSplit = str.split(" ", 1); // Limits to 1 split
+console.log(limitedSplit); // ["Hello,"]
+
+
